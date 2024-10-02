@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "PP Fraktion Mono", sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.blocks-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index:1;
+}
+
+#blocks {
+  background-color: #131313;
+  width: 105vw;
+  height: 100vh; 
+  display: flex;
+  justify-content: flex-start; 
+  align-content: flex-start;
+  overflow: hidden;
+  z-index: 1;
+  flex-wrap: wrap; 
+}
+
+.block {
+    width: 50px;
+    height: 50px;
+    border: 0.5px solid rgba(255, 255, 255, 0.075);
+    transition: border-color 0.3s ease;
+}
+
+
+.highlight {
+    border-color: #ebfb1d;
+}
+
+
+.card {
+    z-index: 10; 
+    position: relative;
+}
+
